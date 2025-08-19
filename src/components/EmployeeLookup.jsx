@@ -8,7 +8,7 @@ function EmployeeList() {
   const [searchName, setSearchName] = useState(""); // <-- added search state
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/employees")
+    fetch("https://leave-management-sbrr.onrender.com/api/employees")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch employees");
         return res.json();
