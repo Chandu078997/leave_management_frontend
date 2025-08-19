@@ -12,7 +12,7 @@ function LeaveForm() {
 
   // Fetch all employees for dropdown
   useEffect(() => {
-    fetch("http://localhost:8080/api/employees")
+    fetch("https://leave-management-sbrr.onrender.com/api/employees")
       .then((res) => res.json())
       .then((data) => setEmployees(data))
       .catch((err) => setError("Failed to fetch employees"));
@@ -32,7 +32,7 @@ function LeaveForm() {
     }
 
     try {
-      const response = await fetch("http://localhost:8080/api/leaves/apply", {
+      const response = await fetch("https://leave-management-sbrr.onrender.com/api/leaves/apply", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
