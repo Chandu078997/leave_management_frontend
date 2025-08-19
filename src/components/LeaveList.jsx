@@ -5,7 +5,7 @@ function LeaveRequests() {
   const [search, setSearch] = useState("");
 
   const fetchLeaves = async () => {
-    const res = await fetch("http://localhost:8080/api/leaves/all");
+    const res = await fetch("https://leave-management-sbrr.onrender.com/api/leaves/all");
     const data = await res.json();
     setLeaves(data);
   };
@@ -20,7 +20,7 @@ function LeaveRequests() {
   };
 
   const handleReject = async (id) => {
-    await fetch(`http://localhost:8080/api/leaves/${id}/reject`, { method: "PUT" });
+    await fetch(`https://leave-management-sbrr.onrender.com/api/leaves/${id}/reject`, { method: "PUT" });
     fetchLeaves();
   };
 
