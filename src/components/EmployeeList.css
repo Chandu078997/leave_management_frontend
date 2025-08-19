@@ -1,0 +1,74 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdfeff;
+}
+
+/* Center the box perfectly */
+.list-container {
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+  min-height: 100vh;         /* take full screen */
+  padding: 200px;             /* small padding for mobile */
+  box-sizing: border-box;
+}
+
+/* The box */
+.list-box {
+  background-color: #ffffff;
+  padding: 40px 350px;        /* normal padding */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;          /* limit width */
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.list-box h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Employee list styling */
+.list-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-box li {
+  padding: 12px 0;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 16px;
+  color: #34495e;
+}
+
+.list-box li:last-child {
+  border-bottom: none;
+}
+
+/* Error text */
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 500px) {
+  .list-box {
+    padding: 20px 15px;
+  }
+
+  .list-box h2 {
+    font-size: 20px;
+  }
+}

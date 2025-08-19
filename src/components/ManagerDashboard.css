@@ -1,0 +1,55 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.search-input {
+  float: right;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.leaves-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaves-table th, .leaves-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.leaves-table th {
+  background-color: #f0f0f0;
+}
+
+.approve-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.approve-btn:hover {
+  background-color: #45a049;
+}
+
+.reject-btn:hover {
+  background-color: #d32f2f;
+}

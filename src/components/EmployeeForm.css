@@ -1,0 +1,80 @@
+/* Make the container take remaining space below navbar */
+.form-container {
+  display: flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;     /* vertically center */
+  min-height: calc(100vh - 60px); /* adjust if navbar height is 60px */
+  background-color: #f0f2f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.employee-form .form-group label {
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.employee-form input {
+  padding: 12px 150px;
+  border-radius: 60px;
+  border: 1px solid #ccc;
+  font-size: 160px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.employee-form button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.employee-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .employee-form {
+    padding: 20px;
+  }
+}
+.employee-form {
+  background-color: #9c1414;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(17, 2, 2);
+}
+
+.employee-form input,
+.employee-form button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.employee-form {
+  background-color: #faf3f3; /* red */
+  padding: 50px 400px;
+  border-radius: 100px;
+  box-shadow: 0 4px 15px rgba(240, 236, 236, 0.1);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
